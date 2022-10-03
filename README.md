@@ -8,7 +8,8 @@ I've created a small Python framework, using pytest and requests libraries. To r
 pip install -r requirements.txt
 pytest
 ```
- There would be some failed tests, but this is expected.
+There would be some failed tests, but this is expected.
+Alternativly, I've added a docker image to run the suite. More details bellow.
  #### Task 1
 ```
  Before you start, to validate the request itself, we would like to see a test suite that hits all the possible endpoints.
@@ -50,4 +51,11 @@ Implemented in `README.md` file, you are reading it at the moment
 
 
 ### Additional things I've added
+Just as quick addition, i've addded a docker image, so you can run it in VM.
+Do build image, you should start `run_in_docker.sh`
+After that, you can start the suite by running the image:
+```
+docker run swapi
+	
+```
 
