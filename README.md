@@ -2,14 +2,14 @@
 ---
 I'm not sure what specifically happened, but the first email to me with this assignment got lost. So I've received this assignment only today. And HR have asked me to complete it as soon as possible. I had only one evening to work on it, so please make a discount for that if I missed something.
 
-## What I have done
+## What have I done
 I've created a small Python framework, using pytest and requests libraries. To run the test you can simply run:
 ```
 pip install -r requirements.txt
 pytest
 ```
 There would be some failed tests, but this is expected.
-Alternativly, I've added a docker image to run the suite. More details bellow.
+Alternatively, I've added a docker image to run the suite. More details bellow.
  #### Task 1
 ```
  Before you start, to validate the request itself, we would like to see a test suite that hits all the possible endpoints.
@@ -51,7 +51,7 @@ Implemented in `README.md` file, you are reading it at the moment
 
 
 ### Additional things I've added
-Just as quick addition, i've addded a docker image, so you can run it in VM.
+Just as quick addition, i've added a docker image, so you can run it in VM.
 Do build image, you should start `run_in_docker.sh`
 After that, you can start the suite by running the image:
 ```
