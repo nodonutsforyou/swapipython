@@ -1,22 +1,20 @@
-import pytest
-import requests
 import logging
 import json
-import re
-import sys
 import urllib.parse
+import pytest
+import requests
 
 log = logging.getLogger("test_search")
 
 
-"""
-A test that find All Details about the home world, films, vehicles, and starships for Luke
-Skywalker assuming you only know the name “Luke Skywalker”.
-"""
 @pytest.mark.parametrize("name", [
     "Luke Skywalker",
 ])
 def test_positive_type(name):
+    """
+    A test that find All Details about the home world, films, vehicles, and starships for Luke
+    Skywalker assuming you only know the name “Luke Skywalker”.
+    """
     endpoint = "https://swapi.dev/api/people/?search=" + str(urllib.parse.quote(name))
     r = requests.get(endpoint)
     # checks if call returning expected status call
